@@ -20,7 +20,7 @@ if [ ! $? -eq 0 ]; then
     echo -e "$verde"'['"$uncolor""$rojo"'!'"$uncolor""$verde"']'"$uncolor""$rojo"' FATAL ERROR DURING REQUIREMENTS INSTALLATION'
 else
     echo '
-    while true do;
+    while true; do
 	function banner() {
     echo '"'"'
 
