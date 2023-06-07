@@ -71,8 +71,9 @@ uncolor='"'"'\e[0m'"'"'
 	echo el resultado es $i
 	sleep 3.6
 	else 
-	echo "$verde"\'[\'"$rojo"\'!\'"$verde"\']\'"$rojo"\'SINTAX ERROR\'
+	echo "$verde"'"'"'['"'"'"$rojo"'"'"'!'"'"'"$verde"'"'"']'"'"'"$rojo"'"'"'SINTAX ERROR'"'"'
 	sleep 1.8
+	fi
 done' > /usr/bin/calc
     chmod +x /usr/bin/calc
     echo "run calc to start calculator"
