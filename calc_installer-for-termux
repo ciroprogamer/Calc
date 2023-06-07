@@ -56,7 +56,8 @@ else
         awk '"'"'BEGIN{print '"'"'$operation'"'"'}'"'"'
     }
 
-    export -f calc' > ~/.bashrc
+    export -f calc' >> ~/.bashrc
     source ~/.bashrc
+    reset
     echo "run calc to start calculator"
 fi
