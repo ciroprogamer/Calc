@@ -55,8 +55,7 @@ else
         read -e -p ''"Introduce la operación, por ejemplo (2+2)*3.5^2 que da como resultado 49. Los espacios serán ignorados: "' 'operation
         operation=$(echo "$operation" | tr -d '"' '"' '')
         awk '"'"'BEGIN{print '"'"'$operation'"'"'}'"'"'
-done
-    export -f calc' > /usr/bin/calc
+done' > /usr/bin/calc
     chmod +x /usr/bin/calc
     echo "run calc to start calculator"
 fi
