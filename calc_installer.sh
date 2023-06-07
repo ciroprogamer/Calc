@@ -1,9 +1,4 @@
-if [ "$SUDO_USER" == "" ]; then
-    usuario="$USER"
-else
-    usuario="$SUDO_USER"
-fi
-
+if [ $(echo "$UID") == 0 ]; then 
 clear
 verde='\033[32m'
 blanco='\033[37m'
@@ -62,9 +57,9 @@ else
         awk '"'"'BEGIN{print '"'"'$operation'"'"'}'"'"'
     }
 
-    export -f calc' >> /home/$usuario/.bashrc
-    cd /home/$usuario/
-source .bashrc
+    export -f calc' > /usr/bin/calc
+    chmod +x /usr/bin/calc
     echo "run calc to start calculator"
 fi
-
+else
+echo -e "$rojopara este script necesitas root broooooooooooooooo"
