@@ -66,7 +66,7 @@ uncolor='"'"'\e[0m'"'"'
         read -e -p ''"Introduce la operación, por ejemplo (2+2)*3.5^2 que da como resultado 49. Los espacios serán ignorados: "' 'operation
         operation=$(echo "$operation" | tr -d '"' '"' '')
         i=$(awk '"'"'BEGIN{print '"'"'$operation'"'"'}'"'"')
-	$i > /dev/null 2>&1
+	awk '"'"'BEGIN{print '"'"'$operation'"'"'}'"'"' > /dev/null 2>&1
 	if [ $? -eq 0 ]; then
 	echo el resultado es $i
 	sleep 3.6
