@@ -63,3 +63,4 @@ else
 fi
 else
 echo -e "$rojopara este script necesitas root broooooooooooooooo"
+fi
