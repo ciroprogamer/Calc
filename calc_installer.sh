@@ -71,7 +71,7 @@ uncolor='"'"'\e[0m'"'"'
 	echo el resultado es $i
 	sleep 3.6
 	else 
-	echo -e "$verde"'"'"'['"'"'"$rojo"'"'"'!'"'"'"$verde"'"'"']'"'"'"$rojo"'"'"'SINTAX ERROR'"'"'
+	echo -e "$verde"'"'"'['"'"'"$rojo"'"'"'!'"'"'"$verde"'"'"']'"'"'"$rojo"'"'"'SINTAX ERROR'"'"'"$uncolor"''
 	sleep 1.8
 	fi
 done' > /usr/bin/calc
