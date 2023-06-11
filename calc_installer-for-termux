@@ -1,3 +1,5 @@
+#!/bin/bash
+
 clear
 verde='\033[32m'
 blanco='\033[37m'
