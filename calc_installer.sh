@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ $(echo "$UID") == 0 ]; then 
 clear
 verde='\033[32m'
